@@ -24,18 +24,49 @@
 
     <!-- Pages : toujours mettre l'ID "tab$" aux sections -->
 
-    <section id="tab1" class="bg-primary p-5 active"></section>
-    <section id="tab2" class="bg-secondary p-5 d-none"></section>
-    <section id="tab3" class="bg-success p-5 d-none"></section>
+    <section id="tab1" class="bg-primary p-5 active">
+        <h2 id="titre">Mon titre</h2>
+        <p>Changer le contenu du h2 par "le titre modifié"</p>
+        <p>Changer la couleur du h2</p>
+        <p>Ajouter une class background bootstrap au h2</p>
+    </section>
+
+    <section id="tab2" class="bg-secondary p-5 d-none">
+        <p>Mettre un écouteur d'événements sur les boutons nav et changer le panel en conséquence</p>
+    </section>
+
+    <section id="tab3" class="bg-success p-5 d-none">
+        <h2>Welcome inconnu</h2>
+        <p>Écrivez dans l'input ci-dessous le nom de la personne que vous voulez accueillir.</p>
+        <p>Lorsque vous cliquez sur le bouton "go", le nom dans l'input sera affiché en h2 et l'input vidé.</p>
+        <input type="text" id="input">
+        <input type="button" id="go" value="Go">
+    </section>
+
     <section id="tab4" class="bg-danger p-5 d-none"></section>
 
     <section id="tab5" class="bg-warning p-5 d-none"> <!-- Ajout image -->
-        <button id="magic">Magie !</button>
+        <button id="magic">Ajoute une image</button>
+        <button id="supLast">Clear last</button>
         <button id="clear">Clear</button>
     </section>
 
     <section id="tab6" class="bg-info p-5 d-none"> <!-- Calculatrice -->
-        <div class="d-flex justify-content-center">
+        <h3>Version 1 :</h3>
+        <form class="d-flex">
+            <input type="text">
+            <select name="cars">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="text">
+            <input type="button" value="=">
+            <div class="border bg-light ml-2 w-25"></div>
+        </form>
+        <h3>Version 2 :</h3>
+        <div class="d-flex">
             <div id="calculator" class="bg-secondary border p-3">
                 <input type="text" class="mb-2 pr-2 text-right" id="screen">
                 <button id="equal">=</button>
@@ -68,7 +99,7 @@
     </section>
 
     <section id="tab7" class="bg-light p-5 d-none"> <!-- Liste -->
-        <input type="text" name="Nom" id="input">          
+        <input type="text" id="input">          
         <button id="create">Ajoute à la liste</button>
         <button id="rem">Supprime la liste</button>
     </section>
