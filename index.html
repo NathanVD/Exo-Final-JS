@@ -61,30 +61,30 @@
         </div>
     </section>
 
-    <section id="tab5" class="bg-warning p-5 active"> <!-- Ajout image -->
+    <section id="tab5" class="bg-warning p-5 d-none"> <!-- Ajout image -->
         <button id="magic">Ajoute une image</button>
         <button id="supLast">Clear last</button>
         <button id="clear">Clear <span id="compteur5" class="badge badge-danger">0</span></button>
     </section>
 
-    <section id="tab6" class="bg-info p-5 d-none"> <!-- Calculatrice -->
+    <section id="tab6" class="bg-info p-5 active"> <!-- Calculatrice -->
         <h3>Version 1 :</h3>
         <form class="d-flex">
-            <input type="text">
-            <select name="cars">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="*">*</option>
-                <option value="/">/</option>
+            <input type="text" id="firstNumber">
+            <select name="ops" id="ops">
+                <option value="+" class="operator">+</option>
+                <option value="-" class="operator">-</option>
+                <option value="*" class="operator">*</option>
+                <option value="/" class="operator">/</option>
             </select>
-            <input type="text">
-            <input type="button" value="=">
-            <div class="border bg-light ml-2 w-25"></div>
+            <input type="text" id="secondNumber">
+            <input type="button" value="=" id="submit6">
+            <input type="text" id="result" readonly>
         </form>
         <h3>Version 2 :</h3>
         <div class="d-flex">
             <div id="calculator" class="bg-secondary border p-3">
-                <input type="text" class="mb-2 pr-2 text-right" id="screen">
+                <input type="text" class="mb-2 pr-2 text-right" id="screen" readonly>
                 <button id="equal">=</button>
                 <div>
                     <button class="num" data-num="7" id="sept">7</button>

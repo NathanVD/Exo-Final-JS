@@ -1,8 +1,55 @@
 //CALCULETTE
 let calculette
 export default calculette = () => {
-    let numbers = document.getElementsByClassName('num')
-    let ops = document.getElementsByClassName('op')
+    //Niveau 1
+    let first = document.getElementById('firstNumber');
+    let second = document.getElementById('secondNumber');
+    let operators = document.getElementById('ops');
+    let submit = document.getElementById('submit6');
+    let resultA = document.getElementById('result');
+
+    let resultat;
+
+    let calc = () => {
+        if ((first.value == "" || isNaN(first.value)) && (second.value == "" || isNaN(second.value))) {
+            first.classList.add("border-danger");
+            second.classList.add("border-danger");
+        } else if (first.value == "" || isNaN(first.value)) {
+            first.classList.remove("border-danger");
+            second.classList.remove("border-danger");
+            first.classList.add("border-danger");
+        } else if (second.value == "" || isNaN(second.value)) {
+            first.classList.remove("border-danger");
+            second.classList.remove("border-danger");
+            second.classList.add("border-danger");
+        } else {
+            first.classList.remove("border-danger");
+            second.classList.remove("border-danger");
+            switch (operators.value) {
+                case "+":
+                    resultat = parseInt(first.value) + parseInt(second.value);
+                    break;
+                case "-":
+                    resultat = parseInt(first.value) - parseInt(second.value);
+                    break;
+                case "*":
+                    resultat = parseInt(first.value) * parseInt(second.value);
+                    break;
+                case "/":
+                    resultat = parseInt(first.value) / parseInt(second.value);
+                    break;
+                default:
+                    resultat = "erreur";
+            }
+            resultA.value = resultat;
+        }
+    }
+    
+    submit.addEventListener("click",calc);
+
+    //Niveau 2
+    let numbers = document.getElementsByClassName('num');
+    let ops = document.getElementsByClassName('op');
     let clear = document.getElementById('clr');
     let equal = document.getElementById('equal');
     let output = document.getElementById('screen');
