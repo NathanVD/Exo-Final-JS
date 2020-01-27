@@ -9,7 +9,8 @@ export default liste = () => {
     let input = document.getElementById('input');
     let create = document.getElementById('create');
     let rem = document.getElementById('rem');
-    let section = document.getElementById('tab7');
+    let section = document.getElementById('sec7');
+    let listZone = document.getElementById('list');
     let list;
 
     let supprimeLi = (e) => {
@@ -19,13 +20,13 @@ export default liste = () => {
     let createList = () => {    
         if (section.lastElementChild.tagName != "UL" && input.value != "") {
             list = document.createElement("ul");
-            section.appendChild(list);
+            listZone.appendChild(list);
         }
         if (input.value != "") {
             input.style.border = ""
             let test = document.createElement("li");
             test.innerHTML = input.value;
-            test.classList.add("w-25","d-flex","justify-content-between","bg-primary","m-1","border")
+            test.classList.add("w-25","d-flex","justify-content-between","bg-info","m-1","border")
             list.appendChild(test);
             let bTest = document.createElement("button");
             bTest.innerHTML = 'x'

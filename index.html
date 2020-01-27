@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/css/style.min.css">
-    <title>Document</title>
+    <title>DOM final</title>
 </head>
 <body class="bg-dark">
 
@@ -67,7 +67,7 @@
         <button id="clear">Clear <span id="compteur5" class="badge badge-danger">0</span></button>
     </section>
 
-    <section id="tab6" class="bg-info p-5 active"> <!-- Calculatrice -->
+    <section id="tab6" class="bg-info p-5 d-none"> <!-- Calculatrice -->
         <h3>Version 1 :</h3>
         <form class="d-flex">
             <input type="text" id="firstNumber">
@@ -114,10 +114,26 @@
         </div>
     </section>
 
-    <section id="tab7" class="bg-light p-5 d-none"> <!-- Liste -->
-        <input type="text" id="input">          
-        <button id="create">Ajoute à la liste</button>
-        <button id="rem">Supprime la liste</button>
+    <section id="tab7" class="active"> <!-- Liste -->
+        <div id="sec7" class="container bg-light p-4 mt-5 rounded">
+            <h1>To do list</h1>
+            <hr>
+            <input type="text" id="input" placeholder="À faire" class="p-1 my-4 w-100">
+            <div class="text-center">
+                <button id="create" class="btn btn-success">Ajoute à la liste</button>
+                <button id="rem" class="btn btn-outline-danger">Supprime la liste</button>
+            </div>
+            <hr>
+            <div id="list" class="text-center">
+                <h3>Filtres</h3>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-primary">Tout</button>
+                    <button type="button" class="btn btn-outline-primary">Fait</button>
+                    <button type="button" class="btn btn-outline-primary">À faire</button>
+                </div>
+            </div>
+            <hr>
+        </div>
     </section>
 
     <script type="module" src="./public/js/main.js"></script>
