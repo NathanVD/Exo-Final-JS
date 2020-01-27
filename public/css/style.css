@@ -1,0 +1,47 @@
+.navtab {
+  border: 1px solid black;
+  border-bottom: none;
+  background-color: white;
+}
+
+.selected {
+  background-color: blue;
+  color: white;
+}
+
+.num {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #B87333;
+  background-color: #e6e34a;
+  border: 3px solid #B87333;
+  margin: 2px;
+}
+
+.op {
+  width: 50px;
+  height: 33px;
+  color: #B87333;
+  background-color: #e6e34a;
+  border: 2px solid #B87333;
+  margin: 2px;
+}
+
+#screen {
+  width: 170px;
+}
+
+#calculator {
+  border-radius: 20px;
+}
+
+#equal, #clr {
+  width: 50px;
+  height: 33px;
+  color: #B87333;
+  background-color: #e6e34a;
+  border: 2px solid #B87333;
+  margin: 2px;
+}
+/*# sourceMappingURL=style.css.map */

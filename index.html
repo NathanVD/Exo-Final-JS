@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/css/style.min.css">
+    <title>Document</title>
+</head>
+<body class="bg-dark">
+
+    <!-- Onglets : toujours mettre les classes "navtab" et "tab$" dans cet ordre -->
+
+    <section id="nav-tabs" class="bg-secondary pt-2 pl-2">
+        <button class="navtab tab1 selected">Exo 1</button>
+        <button class="navtab tab2">Exo 2</button>
+        <button class="navtab tab3">Exo 3</button>
+        <button class="navtab tab4">Exo 4</button>
+        <button class="navtab tab5">Exo 5</button>
+        <button class="navtab tab6">Exo 6</button>
+        <button class="navtab tab7">Exo 7</button>
+    </section>
+
+    <!-- Pages : toujours mettre l'ID "tab$" aux sections -->
+
+    <section id="tab1" class="bg-primary p-5 active"></section>
+    <section id="tab2" class="bg-secondary p-5 d-none"></section>
+    <section id="tab3" class="bg-success p-5 d-none"></section>
+    <section id="tab4" class="bg-danger p-5 d-none"></section>
+
+    <section id="tab5" class="bg-warning p-5 d-none"> <!-- Ajout image -->
+        <button id="magic">Magie !</button>
+        <button id="clear">Clear</button>
+    </section>
+
+    <section id="tab6" class="bg-info p-5 d-none"> <!-- Calculatrice -->
+        <div class="d-flex justify-content-center">
+            <div id="calculator" class="bg-secondary border p-3">
+                <input type="text" class="mb-2 pr-2 text-right" id="screen">
+                <button id="equal">=</button>
+                <div>
+                    <button class="num" data-num="7" id="sept">7</button>
+                    <button class="num" data-num="8" id="huit">8</button>
+                    <button class="num" data-num="9" id="neuf">9</button>
+                    <button class="op" id="div">/</button>
+                </div>
+                <div>
+                    <button class="num" data-num="4" id="quatre">4</button>
+                    <button class="num" data-num="5" id="cinq">5</button>
+                    <button class="num" data-num="6" id="six">6</button>
+                    <button class="op" id="mult">*</button>
+                </div>
+                <div>
+                    <button class="num" value="1" id="un">1</button>
+                    <button class="num" data-num="2" id="deux">2</button>
+                    <button class="num" data-num="3" id="trois">3</button>
+                    <button class="op" id="sub">-</button>
+                </div>
+                <div>
+                    <button class="clr" id="clr">clr</button>
+                    <button class="num" data-num="0" id="zero">0</button>
+                    <button class="num" data-num="." id="point">.</button>
+                    <button class="op" id="add">+</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tab7" class="bg-light p-5 d-none"> <!-- Liste -->
+        <input type="text" name="Nom" id="input">          
+        <button id="create">Ajoute à la liste</button>
+        <button id="rem">Supprime la liste</button>
+    </section>
+
+    <script type="module" src="./public/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
