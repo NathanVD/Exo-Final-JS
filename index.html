@@ -24,7 +24,7 @@
 
     <!-- Pages : toujours mettre l'ID "tab$" aux sections -->
 
-    <section id="tab1" class="bg-primary p-5 d-none">
+    <section id="tab1" class="bg-primary p-5 d-none"> <!-- Changer les propriétés d'un titre -->
         <h2 id="titre">Mon titre</h2>
         <p>Changer le contenu du h2 par "le titre modifié"</p>
         <p>Changer la couleur du h2</p>
@@ -35,7 +35,7 @@
         <p>Mettre un écouteur d'événements sur les boutons nav et changer le panel en conséquence</p>
     </section>
 
-    <section id="tab3" class="bg-success p-5 d-none">
+    <section id="tab3" class="bg-success p-5 d-none"> <!-- Dire "Welcome" au nom entré -->
         <h2>Welcome inconnu</h2>
         <p>Écrivez dans l'input ci-dessous le nom de la personne que vous voulez accueillir.</p>
         <p>Lorsque vous cliquez sur le bouton "go", le nom dans l'input sera affiché dans le span du h2 et l'input vidé.</p>
@@ -46,7 +46,7 @@
         <h2>Welcome <span id="output3"></span></h2>
     </section>
 
-    <section id="tab4" class="bg-danger p-5 active">
+    <section id="tab4" class="bg-danger p-5 d-none"> <!-- Déplacer carré d'une boîte à l'autre -->
         <div class="container bg-light d-flex flex-column align-items-center p-5">
             <h2>Déplacer les éléments</h2>
             <div class="d-flex">
@@ -61,10 +61,10 @@
         </div>
     </section>
 
-    <section id="tab5" class="bg-warning p-5 d-none"> <!-- Ajout image -->
+    <section id="tab5" class="bg-warning p-5 active"> <!-- Ajout image -->
         <button id="magic">Ajoute une image</button>
         <button id="supLast">Clear last</button>
-        <button id="clear">Clear</button>
+        <button id="clear">Clear <span id="compteur5" class="badge badge-danger">0</span></button>
     </section>
 
     <section id="tab6" class="bg-info p-5 d-none"> <!-- Calculatrice -->
