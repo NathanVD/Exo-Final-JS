@@ -24,7 +24,7 @@
 
     <!-- Pages : toujours mettre l'ID "tab$" aux sections -->
 
-    <section id="tab1" class="bg-primary p-5 active">
+    <section id="tab1" class="bg-primary p-5 d-none">
         <h2 id="titre">Mon titre</h2>
         <p>Changer le contenu du h2 par "le titre modifié"</p>
         <p>Changer la couleur du h2</p>
@@ -46,13 +46,18 @@
         <h2>Welcome <span id="output3"></span></h2>
     </section>
 
-    <section id="tab4" class="bg-danger p-5 d-none">
-        <div class="container">
+    <section id="tab4" class="bg-danger p-5 active">
+        <div class="container bg-light d-flex flex-column align-items-center p-5">
             <h2>Déplacer les éléments</h2>
-            <div></div>
-            <div></div>
-            <button id="change">Change de place</button>
-            <button id="reset4">Nombre de click: <span id="compteur 4">0</span></button>
+            <div class="d-flex">
+                <div id="block1" class="block d-flex align-items-center justify-content-center bg-secondary m-3"><div id="square" class="bg-info"></div></div>
+                <div id="block2" class="block d-flex align-items-center justify-content-center bg-secondary m-3"></div>
+            </div>
+            <div>
+                <button id="change">Change de place</button>
+                <button id="reset4">Nombre de click: <span id="compteur4">0</span></button>
+            </div>
+
         </div>
     </section>
 

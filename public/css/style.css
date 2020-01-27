@@ -28,6 +28,16 @@
   margin: 2px;
 }
 
+.block {
+  width: 500px;
+  height: 250px;
+}
+
+.block #square {
+  width: 100px;
+  height: 100px;
+}
+
 #screen {
   width: 170px;
 }
