@@ -19,7 +19,7 @@ export default images = () => {
             section.appendChild(gallery);
         }
         img = document.createElement("img");
-        img.setAttribute("src","./Catastrophe.gif");
+        img.setAttribute("src","./public/img/Catastrophe.gif");
         img.classList.add('m-1');
         gallery.appendChild(img);
     }

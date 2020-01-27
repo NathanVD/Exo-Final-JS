@@ -1,3 +1,4 @@
+//Modification titre
 let titre
 export default titre = () => {
     let title = document.getElementById("titre");

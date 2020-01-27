@@ -38,12 +38,23 @@
     <section id="tab3" class="bg-success p-5 d-none">
         <h2>Welcome inconnu</h2>
         <p>Écrivez dans l'input ci-dessous le nom de la personne que vous voulez accueillir.</p>
-        <p>Lorsque vous cliquez sur le bouton "go", le nom dans l'input sera affiché en h2 et l'input vidé.</p>
-        <input type="text" id="input">
-        <input type="button" id="go" value="Go">
+        <p>Lorsque vous cliquez sur le bouton "go", le nom dans l'input sera affiché dans le span du h2 et l'input vidé.</p>
+        <form  class="my-5">
+            <input type="text" id="input3">
+            <input type="button" id="go" value="Go">
+        </form>
+        <h2>Welcome <span id="output3"></span></h2>
     </section>
 
-    <section id="tab4" class="bg-danger p-5 d-none"></section>
+    <section id="tab4" class="bg-danger p-5 d-none">
+        <div class="container">
+            <h2>Déplacer les éléments</h2>
+            <div></div>
+            <div></div>
+            <button id="change">Change de place</button>
+            <button id="reset4">Nombre de click: <span id="compteur 4">0</span></button>
+        </div>
+    </section>
 
     <section id="tab5" class="bg-warning p-5 d-none"> <!-- Ajout image -->
         <button id="magic">Ajoute une image</button>
